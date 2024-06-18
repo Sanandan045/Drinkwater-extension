@@ -1,0 +1,27 @@
+{
+    "name": "Water Reminder(Ek ghut)",
+    "description":"  this reminds you to take a break from the screen and drink some water",
+    "version":"1.0",
+    "manifest_version":3,
+    "icons":{
+        "16": "water-bottle-16.png",
+        "48": "water-bottle-48.png",
+        "128": "water-bottle-128.png"
+
+    },
+    "background":{
+        "service_worker":"background.js"
+    },
+    "permissions":[
+        "notifications",
+        "alarms"
+    ],
+    "action":{
+        "default_popup":"popup.html",
+        "default_icon": {
+            "16": "water-bottle-16.png",
+            "48": "water-bottle-48.png",
+            "128": "water-bottle-128.png"
+          }
+    }
+}
